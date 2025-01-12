@@ -43,3 +43,10 @@ body
   /* height: 1400px; */
   margin: 0 auto;
 }
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
