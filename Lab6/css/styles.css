@@ -17,7 +17,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#title {
+#title
+ {
     text-align: center;
     background: #ff3c68;
     color: #fff;
@@ -27,21 +28,31 @@ body {
     text-align: center;
     background: #ef8172;
     color: #fff;
+    padding: 7% 15%;
 }
 
 #press {
     text-align: center;
     background: #ef8172;
     color: #fff;
-    padding-bottom: 3%;
+
 }
 
-#pricing
+#pricing,
+#features
 {
     text-align: center;
     background: #fff;
     color: #000;
-    padding-bottom: 3%; 
+    padding: 7% 15%;
+}
+
+#cta
+{
+    text-align: center;
+    background: #ff3c68;
+    color: #fff; 
+    padding: 7% 15%;
 }
 .navbar-brand {
     font-size: 2.5rem;
@@ -49,7 +60,8 @@ body {
 }
 
 .navbar {
-    padding-bottom: 4.5rem
+    padding-bottom: 4.5rem;
+    text-align: center;
 }
 
 .nav-item {
@@ -57,7 +69,7 @@ body {
 }
 
 .nav-link {
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Montserrat-Light', sans-serif;
 }
 
@@ -74,11 +86,20 @@ body {
     width: 10%;
     border-radius: 100%;
     margin: 20px;
-    /* padding: 7% 15%; */
+}
+
+.testimonial-text
+{
+    font-size: 3rem;
 }
 
 .press-logo
 {
     width: 15%;
     margin:  20px 20px 50px;
+}
+
+.section-pricing
+{
+    padding-bottom: 3%;
 }
