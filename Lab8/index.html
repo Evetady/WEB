@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button-container">
+        <button type="button" onclick="calculateLoveConvergence()"> Калькулятор любви </button>
+        <button type="button" onclick="calculateAndDisplayBMI()"> BMI Калькулятор </button>
+        <button type="button" onclick="calculateLeapYearStatus()"> Является ли год високосным? </button>
+        <button type="button" onclick="calculateDinnerPayer()"> Кто оплачивает ужин? </button>
+    </div>
+</body>
+
+</html>
