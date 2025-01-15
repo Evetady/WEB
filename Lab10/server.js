@@ -1,14 +1,24 @@
-//Запустите свою первую программу, сохраненную в js-файле
-const os = require('os');
-let userName = os.userInfo().username
+// Подключаем пакет axios для выполнения HTTP-запросов
+const axios = require('axios');
+const path = require('path');
 
-console.log(userName)
+// Настройка сервера для обслуживания статических файлов
+const express = require('express');
+const app = express();
+const PORT = 3000;
 
-setInterval(() => {
-    console.log('Выполняюсь каждую секунду.')
-}, 1000)
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/html/index.html');
+});
 
-setTimeout(() => {
-    console.log('Задержка выполнения 5 сек.')
-}, 5000)
+app.get('/weather-data', (req, res) => {
+  const weatherData = require('./data').currentWeather;
+  res.json(weatherData);
+});
 
+// Настройка статических файлов
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.listen(PORT, () => {
+  console.log(`Сервер запущен на http://localhost:${PORT}`);
+});
